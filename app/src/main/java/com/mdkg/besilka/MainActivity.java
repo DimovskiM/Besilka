@@ -12,12 +12,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button btnSolo = (Button) findViewById(R.id.btnSolo);
+        Button btnSolo =  findViewById(R.id.btnSolo);
+        Button btnSettings =  findViewById(R.id.btnSettings);
          btnSolo.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
                  Intent soloIntent = new Intent(MainActivity.this,Solo.class);
                  startActivity(soloIntent);
+             }
+         });
+         btnSettings.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 Intent settingsIntent = new Intent(MainActivity.this,SettingsActivity.class);
+                  startActivity(settingsIntent);
              }
          });
     }

@@ -16,4 +16,5 @@ public Word (String word , String category,int weight){
     this.weight=weight;
 }
 
+
 }
