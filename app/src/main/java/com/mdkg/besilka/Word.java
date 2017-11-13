@@ -6,6 +6,14 @@ package com.mdkg.besilka;
 
 public class Word {
 
+String word;
+String category;
+int weight;
 
+public Word (String word , String category,int weight){
+    this.word=word;
+    this.category=category;
+    this.weight=weight;
+}
 
 }
